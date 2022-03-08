@@ -8,5 +8,5 @@
     "tsc": "tsc",
     "legacy": "webpack --config legacy/webpack.config.js"
   },
-  "gitHead": "72d9da632d6a504dab28638e91497acfe8e0fe64"
+  "gitHead": "c116acb69dcb8c07341d8d6c452e8f19f3b9eeb5"
 }
