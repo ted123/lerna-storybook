@@ -1,5 +1,5 @@
 {
-  "name": "button",
+  "name": "testbutton",
   "description": "test component",
   "version": "0.0.1",
   "main": "lib/index.js",
@@ -7,5 +7,6 @@
   "scripts": {
     "tsc": "tsc",
     "legacy": "webpack --config legacy/webpack.config.js"
-  }
+  },
+  "gitHead": "7a0df84fea939b5cb8c1f909b570d00cb741104d"
 }
