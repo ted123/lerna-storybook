@@ -1,8 +1,5 @@
 {
   "packages": ["packages/*"],
-  "npmClient": "npm",
-  "version": "independent",
-  "publishConfig": {
-    "access": "public"
-  }
+  "npmClient": "yarn",
+  "version": "independent"
 }
