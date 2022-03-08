@@ -2,7 +2,7 @@
   "name": "monorepo-test-example",
   "author": "ted123",
   "description": "an example Monorepo React Typescript component library",
-  "private": true,
+  "private": false,
   "scripts": {
     "lint": "run-p -c lint:*",
     "lint:ts": "tslint 'packages/**/*.ts{,x}' --exclude 'packages/**/lib/*.d.ts'",
