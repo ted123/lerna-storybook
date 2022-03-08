@@ -1,11 +1,5 @@
 {
   "packages": ["packages/*"],
   "npmClient": "npm",
-  "version": "independent",
-  "command": {
-    "publish": {
-      "scope": "@4ward",
-      "registry": "https://registry.npmjs.org/"
-    }
-  }
+  "version": "independent"
 }
