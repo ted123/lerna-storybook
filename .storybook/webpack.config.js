@@ -5,9 +5,15 @@ module.exports = ({ config }) => {
   //config
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
-    loader: require.resolve("ts-loader")
+    loader: require.resolve("ts-loader"),
   });
-  config.resolve.extensions.push(".ts", ".tsx");
+  config.module.rules.push({
+    test: /\.mjs/,
+    resolve: {
+      fullySpecified: false,
+    }
+  });
+  config.resolve.extensions.push('.mjs', '.ts', '.tsx');
   config.resolve.plugins = config.resolve.plugins || [];
   // lerna bootstrap creates a symlink to shared packages
   // In order for storybook to bundle the symlinked package

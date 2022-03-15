@@ -60,6 +60,7 @@
     "@storybook/manager-webpack5": "^6.4.19",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "storybook-addon-react-runner": "^0.2.2",
     "styled-components": "^5.3.3"
   }
 }
