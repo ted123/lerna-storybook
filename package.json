@@ -5,8 +5,8 @@
   "private": false,
   "scripts": {
     "lint": "run-p -c lint:*",
-    "lint:ts": "tslint 'packages/**/*.ts{,x}' --exclude 'packages/**/lib/*.d.ts'",
-    "lint:css": "stylelint 'packages/**/*.ts{,x}'",
+    "lint:ts": "tslint 'packages/**/*.ts{,x}' --exclude 'packages/**/lib/**/*.d.ts'",
+    "lint:css": "stylelint 'packages/**/src/*.ts{,x}'",
     "prettier": "yarn lint:ts --fix",
     "test": "jest",
     "tsc": "lerna run tsc",

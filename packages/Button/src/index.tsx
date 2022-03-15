@@ -4,6 +4,7 @@ import styled from "styled-components";
 export interface ButtonProps {
   compiler: string;
   framework: string;
+  children: React.ReactNode
 }
 
 const Wrapper = styled.div`
@@ -16,6 +17,7 @@ const Button = (props: ButtonProps) => (
     <h1>
       Hello World from {props.compiler} and {props.framework}!
     </h1>
+    {props.children}
   </Wrapper>
 );
 
