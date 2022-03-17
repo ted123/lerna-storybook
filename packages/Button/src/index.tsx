@@ -2,8 +2,8 @@ import * as React from "react";
 import styled from "styled-components";
 
 export interface ButtonProps {
-  compiler: string;
-  framework: string;
+  compiler?: string;
+  framework?: string;
   children?: React.ReactNode
 }
 

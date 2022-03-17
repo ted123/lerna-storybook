@@ -8,7 +8,7 @@ module.exports = ({ config }) => {
     loader: require.resolve("ts-loader"),
   });
   config.module.rules.push({
-    test: /\.mjs/,
+    test: /\.mjs$/,
     resolve: {
       fullySpecified: false,
     }

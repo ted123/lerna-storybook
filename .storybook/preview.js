@@ -1,8 +1,8 @@
-import {Button} from "../packages/Button/src";
+import Button from "../packages/Button/src";
 
 export const parameters = {
   reactRunner: {
-    scope: {Button},
+    scope: { Button },
     language: 'tsx'
   },
 };

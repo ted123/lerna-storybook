@@ -3302,7 +3302,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/theming@6.4.19":
+"@storybook/theming@6.4.19", "@storybook/theming@^6.4.19":
   version "6.4.19"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-6.4.19.tgz#0a6834d91e0b0eadbb10282e7fb2947e2bbf9e9e"
   integrity sha512-V4pWmTvAxmbHR6B3jA4hPkaxZPyExHvCToy7b76DpUTpuHihijNDMAn85KhOQYIeL9q14zP/aiz899tOHsOidg==
@@ -12949,10 +12949,10 @@ store2@^2.12.0:
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.13.1.tgz#fae7b5bb9d35fc53dc61cd262df3abb2f6e59022"
   integrity sha512-iJtHSGmNgAUx0b/MCS6ASGxb//hGrHHRgzvN+K5bvkBTN7A9RTpPSf1WSp+nPGvWCJ1jRnvY7MKnuqfoi3OEqg==
 
-storybook-addon-react-runner@^0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/storybook-addon-react-runner/-/storybook-addon-react-runner-0.2.2.tgz#495e33674c42c496597f92adac2e7e100d6fd937"
-  integrity sha512-g9rPKg1DR6y0lBBmEmSwojwB7i1PymZSwDTfklRwZatnuf4lwhIyGS/mlMGYl/ye1ABVhm9zv8rENmcr8uWXug==
+storybook-addon-react-runner@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/storybook-addon-react-runner/-/storybook-addon-react-runner-0.2.3.tgz#87f53993f6b4e59fa16e4caf1c4d2c1775839cf4"
+  integrity sha512-PseRfwKfF+gsPgq+HGQZRJbV9FLYrJ3TJdlZhmSjAOaTppzLqzgHIPLjp62YC9mtfWH0mf40ulLp4QNpG+N0Pg==
   dependencies:
     react-live-runner "^1.0.0-rc.2"
     react-runner "^1.0.0-rc.2"
