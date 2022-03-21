@@ -2,35 +2,29 @@
 
 ### an example Monorepo React Typescript component library
 
-### Generated from lerna-typescript-react
+## Getting Started
+1. Run yarn install
+2. Install yo & lerna globally using this command: `yarn global add yo && yarn global add lerna`
+3. Go to scripts > package-generator and run: `npm link`
+4. Go back to root 
 
-#### Monorepo for building re-usable component libraries with React and Typescript. We use [Lerna] which is a deployment tool for serverless monorepos that optimizes the workflow around multi-package repositories with Git and NPM.
+## Creating New Component
+1. Run `yo create:package`
+2. Fill up the details and press enter
 
-### Technolgies
+## Modifying Existing Component
+ - Look for the component in the packages folder and edit it
 
-- **[Lerna]** - Optimize workflow around multi-package repos with Git and NPM
-- **[React]** - Building components for single page or legacy applications
-- **[Typescript]** - Provides optional static typing, classes and interfaces
-- **[Jest]** - Testing framework for React components
-- **[Enzyme]** - Testing utility for React components
-- **[Storybook]** - UI component developer tool for React
-- **[Styled-components]** - CSS-in-JS for React components
-- **[TSLint]** - Static code analysis tool for Typescript
-- **[StyleLint]** - CSS Linter that helps to enforce conventions
-- **[Prettier]** - Opinionated code formatter for Javascript
-- **[Webpack]** - Module bundler for Javascript
-- **[Yarn]** - Package Manager
+### Adding Dependencies to Component
+ - Run `lerna add <npm-package-name> --scope=<package-name-in-package.json>`
+ ex: `lerna add lodash --scope=@4ward/ui.button`
 
-[lerna]: https://github.com/lerna/lerna
-[react]: https://reactjs.org/
-[typescript]: https://www.typescriptlang.org/
-[jest]: https://jestjs.io/
-[enzyme]: https://airbnb.io/enzyme/
-[storybook]: https://storybook.js.org/
-[styled-components]: https://www.styled-components.com/
-[tslint]: https://palantir.github.io/tslint/
-[stylelint]: https://github.com/stylelint/stylelint
-[prettier]: https://prettier.io/
-[webpack]: https://webpack.js.org/
-[yarn]: https://yarnpkg.com/lang/en/
-[visit]: https://github.com/nreochWW/generator-lerna-typescript-react
+### Storybook
+ - `yarn run storybook`
+## Deployment
+- Currently using manual command for component deployment. WIP
+
+## Contributing
+- For updating/creating new components, create a new branch in the repository with the following format: `component-<component-name>` ex: `component-hello-world` for new components and create a pull request once done.
+- Contact ted123 to get added as collaborator.
+

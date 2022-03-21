@@ -6,9 +6,9 @@
   "scripts": {
     "lint": "run-p -c lint:*",
     "lint:ts": "tslint 'packages/**/*.ts{,x}' --exclude 'packages/**/lib/**/*.d.ts'",
-    "lint:css": "stylelint 'packages/**/src/*.ts{,x}'",
+    "lint:css": "stylelint 'packages/**/src/style.ts' --fix",
     "prettier": "yarn lint:ts --fix",
-    "test": "jest",
+    "test": "jest --env=jsdom",
     "tsc": "lerna run tsc",
     "bootstrap": "lerna bootstrap",
     "legacy": "lerna run legacy",
@@ -58,6 +58,7 @@
     "@storybook/addon-essentials": "^6.4.19",
     "@storybook/builder-webpack5": "^6.4.19",
     "@storybook/manager-webpack5": "^6.4.19",
+    "@testing-library/react": "^12.1.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "styled-components": "^5.3.3"

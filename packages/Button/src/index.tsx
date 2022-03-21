@@ -1,24 +1,31 @@
-import * as React from "react";
-import styled from "styled-components";
+import React, { ReactNode } from 'react';
+import { StyledButton } from './style';
+export type ButtonProps = {
+  /**
+   * a node to be rendered in the special component.
+   */
+  disabled?: boolean;
+  buttonType: string;
+  children?: ReactNode;
+  onClick?: () => void;
+};
 
-export interface ButtonProps {
-  compiler: string;
-  framework: string;
-  children: React.ReactNode
+export function Button({
+  disabled = false,
+  buttonType,
+  children,
+  onClick
+}: ButtonProps) {
+  return (
+    <div>
+      <StyledButton
+        onClick={onClick}
+        buttonType={buttonType}
+        disabled={disabled}
+        data-testid="button"
+      >
+        {children}
+      </StyledButton>
+    </div>
+  );
 }
-
-const Wrapper = styled.div`
-  border: 1px solid blue;
-  padding: 10px;
-`;
-
-const Button = (props: ButtonProps) => (
-  <Wrapper>
-    <h1>
-      Hello World from {props.compiler} and {props.framework}!
-    </h1>
-    {props.children}
-  </Wrapper>
-);
-
-export default Button;

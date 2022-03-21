@@ -1,10 +1,12 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "target": "es5",
+    "target": "es6",
     "lib": ["es5", "es6", "es7", "es2017", "dom"],
     "jsx": "react",
-    "removeComments": true
+    "removeComments": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
   },
   "exclude": ["node_modules"]
 }

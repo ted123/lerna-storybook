@@ -2,29 +2,106 @@
 
 import { Canvas, Meta, Story, ArgsTable } from '@storybook/addon-docs';
 
-import Button from '../src';
+import { Button } from '../src';
 
 <Meta title="Components/Button" component={Button} />
 
 # Button
 
-With `MDX`, we can define a story for `Checkbox` right in the middle of our Markdown documentation.
+Common button component
 
 <Canvas>
   <Story 
-    name="demo button"
+    name="primary"
     args={{ 
-      compiler: 'TS',
-      framework: 'react',
-      children: <div>{'I am a child'}</div>
+      buttonType: 'primary',
+      onClick: () => console.log('primary button clicked')
     }}>
       {(args) => (
         <div>
-          {'testfooo'}
-          <Button {...args} />
+          <Button {...args}>
+            {'Hello World!'}
+          </Button>
         </div>
       )}
    </Story>
 </Canvas>
 
-<ArgsTable story="demo button" />
+<ArgsTable story="primary" />
+
+<Canvas>
+  <Story 
+    name="success"
+    args={{ 
+      buttonType: 'success',
+      onClick: () => console.log('success button clicked')
+    }}>
+      {(args) => (
+        <div>
+          <Button {...args}>
+            {'Hello World!'}
+          </Button>
+        </div>
+      )}
+   </Story>
+</Canvas>
+
+<ArgsTable story="success" />
+
+<Canvas>
+  <Story 
+    name="danger"
+    args={{ 
+      buttonType: 'danger',
+      onClick: () => console.log('danger button clicked')
+    }}>
+      {(args) => (
+        <div>
+          <Button {...args}>
+            {'Hello World!'}
+          </Button>
+        </div>
+      )}
+   </Story>
+</Canvas>
+
+<ArgsTable story="danger" />
+
+<Canvas>
+  <Story 
+    name="standard"
+    args={{ 
+      buttonType: 'standard',
+      onClick: () => console.log('standard button clicked')
+    }}>
+      {(args) => (
+        <div>
+          <Button {...args}>
+            {'Hello World!'}
+          </Button>
+        </div>
+      )}
+   </Story>
+</Canvas>
+
+<ArgsTable story="standard" />
+
+<Canvas>
+  <Story 
+    name="disabled"
+    args={{ 
+      buttonType: 'standard',
+      disabled: true,
+      onClick: () => console.log('disabled button clicked')
+    }}>
+      {(args) => (
+        <div>
+          <Button {...args}>
+            {'Hello World!'}
+          </Button>
+        </div>
+      )}
+   </Story>
+</Canvas>
+
+<ArgsTable story="disabled" />
