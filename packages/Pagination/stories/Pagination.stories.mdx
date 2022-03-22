@@ -1,0 +1,31 @@
+<!-- Pagination.stories.mdx -->
+
+import { Canvas, Meta, Story, ArgsTable } from '@storybook/addon-docs';
+
+import { Pagination } from '../src';
+
+<Meta title="Components/Pagination" component={Pagination} />
+
+# Pagination
+
+paginate contents
+
+<Canvas>
+  <Story 
+    name="default"
+    args={{
+      totalDataLength: 200,
+      handlePagination: () => {},
+      maxPageLimit: 6,
+      disabled: false,
+      currentPage: 1
+    }}>
+      {(args) => (
+        <div>
+          <Pagination {...args} />
+        </div>
+      )}
+   </Story>
+</Canvas>
+
+<ArgsTable story="default" />
