@@ -42,7 +42,7 @@ export function Pagination({
   }, [cPage, setcurrentPage]);
   const handleClick = event => {
     setcurrentPage(Number(event.target.id));
-    if (Number(event.target.id) < maxPageLimit - Math.floor(maxPageLimit / 2)) {
+    if (Number(event.target.id) < startAndEndWindowSize) {
       setminPageNumberLimit(0);
       setmaxPageNumberLimit(maxPageLimit);
     }
@@ -50,7 +50,7 @@ export function Pagination({
       setminPageNumberLimit(pages.length - maxPageLimit);
       setmaxPageNumberLimit(pages.length);
     }
-    if (Number(event.target.id) >= maxPageLimit - 1) {
+    if (Number(event.target.id) > maxPageLimit - 1) {
       setmaxPageNumberLimit(Number(event.target.id) + 2);
       setminPageNumberLimit(Number(event.target.id) - 3);
     }
@@ -151,7 +151,7 @@ export function Pagination({
     return null;
   };
   const pageDecrementBtn = () => {
-    if (minPageNumberLimit >= 1) {
+    if (cPage >= maxPageLimit) {
       const firstPage = pages.slice(0, 1).toString();
       return (
         <StyledEllipsis>
